@@ -21,7 +21,6 @@ const adicionarCard = (nome, nota) => {
         } else {
             novaDiv.classList.add('azul')
         }
-    
         container.appendChild(novaDiv)
     }
     
@@ -32,7 +31,6 @@ const handleClick = () => {
     const nota = prompt("Dígite a nota")
     adicionarCard(nome, Number(nota))
 }
-
 
 adicionar.addEventListener('click', handleClick)
 

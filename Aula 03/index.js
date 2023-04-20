@@ -1,22 +1,23 @@
 'use strict'
 
 import{produtos} from "./produtos.js"
+import "../Aula 04/WebComponent/card.js"
 
 const criaCard = (produto) => {
-    const card = document.createElement('div')
+    const card = document.createElement('card-mateus')
     card.classList.add('card')
 
     const foto = document.createElement('img')
     foto.classList.add('card__image')
-    foto.src = `./img/${produto.image}`
+    card.foto = `./img/${produto.image}`
 
     const titulo = document.createElement('h5')
     titulo.classList.add('card__title')
-    titulo.textContent =  produto.name
+    card.nome =  produto.name
 
     const descricao = document.createElement('p')
     descricao.classList.add('card__description')
-    descricao.textContent = produto.description
+    card.turma = produto.description
 
     const preco =  document.createElement('span')
     preco.classList.add('card__price')
