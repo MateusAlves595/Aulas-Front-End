@@ -32,22 +32,21 @@ class card extends HTMLElement {
                     box-sizing: border-box
                 }
                 .card{
-                    width: 200px;
+                    width: 100%;
                     height: 300px;
                     display: grid;
                     grid-template-rows: 20% 60% 20%;
                     place-items: center;
-                    background-color: ${this.color};
                 }
                 .card__text{
-                    color: #fff;
+                    color: #000;
                     font-size: 1rem;
                     font-weight: 600;
                 }
                 .card__image{
                     height: 150px;
-                    width: 150px;
-                    background-color: blue;
+                    width: 200px;
+                    background-color: white;
                     background-image: url(${this.foto});
                     background-size: cover;
                 }
