@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.menu_container{
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 24px;
+    text-transform: uppercase;
+}
+
+#root{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.container_home{
+    background-color: black;
+}
+
+.container_azul{
+    background-color: blue;
+}
+
+.container_vermelho{
+    background-color: red;
+}
+
+.container_amarelo{
+    background-color: yellow;
+}
+
+.container_verde{
+    background-color: green;
+}
